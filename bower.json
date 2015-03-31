@@ -1,0 +1,19 @@
+{
+  "name": "bastianhofmann.me",
+  "version": "0.0.0",
+  "homepage": "https://github.com/BastianHofmann/bastianhofmann.me",
+  "authors": [
+    "Bastian Hofmann <bastianhofmann@me.com>"
+  ],
+  "description": "My portfolio site.",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
