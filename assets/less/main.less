@@ -1,0 +1,46 @@
+
+@import "./bootstrap/bootstrap";
+
+
+@font-family-sans-serif:  "Exo", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+@monster-headings-color: #FFFFFF;
+@monster-background-color: #5C258D;
+
+body {
+	border-top: 4px solid #4389A2;
+}
+
+.monster {
+	padding: 40px 0;
+	background-color: @monster-background-color;
+	h2 {
+		display: block;
+		color: @monster-headings-color;
+		.cursor {
+			display: inline-block;
+			width: 13px;
+			height: 28px;
+			margin-bottom: -1px;
+			margin-left: 8px;
+			background-color: #FFFFFF;
+			-webkit-animation-name: blinker;
+			-webkit-animation-duration: 1.4s;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-iteration-count: infinite;
+		}
+	}
+}
+
+.btn-monster {
+	color: #FFFFFF;
+	border-color: #FFFFFF;
+	border-radius: 0;
+}
+
+@-webkit-keyframes blinker {
+    1% { opacity: 0.0; }
+    50% { opacity: 0.0; }
+    51% { opacity: 1.0; }
+}
+

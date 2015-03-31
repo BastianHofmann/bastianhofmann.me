@@ -1,20 +1,27 @@
 {
   "name": "bastianhofmann.me",
   "version": "1.0.0",
-  "description": "My portfolio site.",
-  "main": "index.js",
-  "private": true,
+  "description": "",
+  "main": "Gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.8.11",
+    "gulp-concat": "^2.5.2",
+    "gulp-less": "3.0.2",
+    "gulp-livereload": "^3.8.0",
+    "gulp-util": "^3.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/BastianHofmann/bastianhofmann.me.git"
   },
-  "author": "Bastian Hofmann bastianhofmann@me.com",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/BastianHofmann/bastianhofmann.me/issues"
   },
-  "homepage": "bastianhofmann@me.com",
-  "dependencies": {
-    "express": "^4.12.3"
-  }
+  "homepage": "https://github.com/BastianHofmann/bastianhofmann.me"
 }
