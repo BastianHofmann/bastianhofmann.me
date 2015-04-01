@@ -10,7 +10,13 @@ gulp.task('less', function() {
     .pipe(livereload());
 });
 
+gulp.task('reload', function() {
+  gulp.src('public/*.html')
+    .pipe(livereload());
+});
+
 gulp.task('watch', function() {
   livereload.listen();
   gulp.watch('assets/**/*.less', ['less']);
+	gulp.watch('public/*.html', ['reload']);
 });

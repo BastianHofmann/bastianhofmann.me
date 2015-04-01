@@ -2,45 +2,52 @@
 @import "./bootstrap/bootstrap";
 
 
-@font-family-sans-serif:  "Exo", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 @monster-headings-color: #FFFFFF;
-@monster-background-color: #5C258D;
+@monster-background-color: #FFFFFF;
 
-body {
-	border-top: 4px solid #4389A2;
+h1, h2, h3 {
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+img {
+	width: 100%;
 }
 
 .monster {
-	padding: 40px 0;
-	background-color: @monster-background-color;
-	h2 {
-		display: block;
-		color: @monster-headings-color;
-		.cursor {
-			display: inline-block;
-			width: 13px;
-			height: 28px;
-			margin-bottom: -1px;
-			margin-left: 8px;
-			background-color: #FFFFFF;
-			-webkit-animation-name: blinker;
-			-webkit-animation-duration: 1.4s;
-			-webkit-animation-timing-function: linear;
-			-webkit-animation-iteration-count: infinite;
-		}
+	padding: 60px 30px;
+	background: url("/img/struckaxiom.png"), -webkit-linear-gradient(60deg, #360033 0%, #0b8793 90%); /* Chrome 10+, Saf5.1+ */
+  background: url("/img/struckaxiom.png"), -moz-linear-gradient(60deg, #360033 0%, #0b8793 90%); /* FF3.6+ */
+  background: url("/img/struckaxiom.png"), -ms-linear-gradient(60deg, #360033 0%, #0b8793 90%); /* IE10 */
+  background: url("/img/struckaxiom.png"), -o-linear-gradient(60deg, #360033 0%, #0b8793 90%); /* Opera 11.10+ */
+  background: url("/img/struckaxiom.png"), linear-gradient(60deg, #360033 0%, #0b8793 90%); /* W3C */
+
+	color: @monster-headings-color;
+	text-align: center;
+
+	h1 {
+		font-size: 42px;
+		margin-bottom: 22px;
+		text-shadow: 1px 1px 2px rgba(0,0,0,.4);
+	}
+
+	p {
+		font-size: 22px;
+		font-weight: 300;
+		opacity: 0.7;
+		text-shadow: 1px 1px 2px rgba(0,0,0,.3);
 	}
 }
 
-.btn-monster {
+.browserupgrade {
+	padding: 10px;
+	margin-bottom: 0;
+	background-color: #f83600;
 	color: #FFFFFF;
-	border-color: #FFFFFF;
-	border-radius: 0;
-}
 
-@-webkit-keyframes blinker {
-    1% { opacity: 0.0; }
-    50% { opacity: 0.0; }
-    51% { opacity: 1.0; }
+	a {
+		color: #FFFFFF;
+		text-decoration: underline;
+	}
 }
-
