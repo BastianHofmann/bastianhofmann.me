@@ -1,13 +1,15 @@
 var gulp = require('gulp'),
 		less = require('gulp-less'),
 		livereload = require('gulp-livereload'),
-		concat = require('gulp-concat');
+		concat = require('gulp-concat'),
+		minifyCSS = require('gulp-minify-css');
 
 gulp.task('less', function() {
   gulp.src('assets/less/main.less')
     .pipe(less().on('error', function(err){
 			this.emit('end');
 		}))
+		.pipe(minifyCSS())
     .pipe(gulp.dest('public/css'))
     .pipe(livereload());
 });
