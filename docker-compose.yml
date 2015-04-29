@@ -1,0 +1,6 @@
+web:
+    image: nginx
+    volumes:
+        - ./public:/usr/share/nginx/html:ro
+    ports:
+        - "80:80"

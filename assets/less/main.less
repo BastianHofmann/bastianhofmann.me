@@ -1,0 +1,89 @@
+@import "./bootstrap/bootstrap";
+
+
+@font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+@monster-headings-color: #FFFFFF;
+@monster-background-color: #FFFFFF;
+
+h1, h2, h3 {
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+img {
+	width: 100%;
+}
+
+.monster {
+	padding: 60px 30px;
+	background: url("/img/struckaxiom.png"), -webkit-linear-gradient(60deg, #360033 0%, #0b8793 90%); /* Chrome 10+, Saf5.1+ */
+  background: url("/img/struckaxiom.png"), -moz-linear-gradient(60deg, #360033 0%, #0b8793 90%); /* FF3.6+ */
+  background: url("/img/struckaxiom.png"), -ms-linear-gradient(60deg, #360033 0%, #0b8793 90%); /* IE10 */
+  background: url("/img/struckaxiom.png"), -o-linear-gradient(60deg, #360033 0%, #0b8793 90%); /* Opera 11.10+ */
+  background: url("/img/struckaxiom.png"), linear-gradient(60deg, #360033 0%, #0b8793 90%); /* W3C */
+
+	color: @monster-headings-color;
+	text-align: center;
+
+	h1 {
+		font-size: 42px;
+		margin-bottom: 22px;
+		text-shadow: 1px 1px 2px rgba(0,0,0,.4);
+	}
+
+	p {
+		font-size: 22px;
+		margin-bottom: 32px;
+		font-weight: 300;
+		opacity: 0.7;
+		text-shadow: 1px 1px 2px rgba(0,0,0,.3);
+	}
+}
+
+.container--narrow {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 480px;
+	.clearfix();
+}
+
+.brand {
+	float: left;
+	width: 50%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding: 0 10px;
+	text-align: center;
+}
+
+.inset {
+	background-color: #f3f3f3;
+}
+
+.brand__element {
+	height: 50px;
+}
+
+.btn-monster {
+	color: #fff;
+	border: 1px solid #fff;
+	-webkit-transition: background-color .2s;
+	transition: background-color .2s;
+	&:hover {
+		background-color: #360033;
+		color: #fff;
+	}
+}
+
+.browserupgrade {
+	padding: 10px;
+	margin-bottom: 0;
+	background-color: #f83600;
+	color: #FFFFFF;
+
+	a {
+		color: #FFFFFF;
+		text-decoration: underline;
+	}
+}
+
